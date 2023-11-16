@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Plan Generator</title>
+</head>
+<body>
+  <header>
+    <h1>Meal Plan Generator</h1>
+  </header>
+
+  <form id="mealPlanForm">
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" name="weight" placeholder="Enter your weight" required>
+
+    <label for="height">Height (cm):</label>
+    <input type="number" id="height" name="height" placeholder="Enter your height" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <label for="numberOfMeals">Number of Meals:</label>
+    <select id="numberOfMeals" name="numberOfMeals">
+      <option value="2">Two Meals</option>
+      <option value="3">Three Meals</option>
+      <option value="5">Five Meals</option>
+    </select>
+
+    <label for="dietPreference">Diet Preference:</label>
+    <select id="dietPreference" name="dietPreference">
+      <option value="balanced">Balanced</option>
+      <option value="low-carb">Low Carb</option>
+      <option value="low-fat">Low Fat</option>
+    </select>
+
+    <label for="healthSpecification">Health Specification:</label>
+    <select id="healthSpecification" name="healthSpecification">
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="alcohol-free">Alcohol-Free</option>
+      <option value="peanut-free">Peanut-Free</option>
+    </select>
+
+    <label for="calories">Calories:</label>
+    <input type="number" id="calories" name="calories" placeholder="Enter daily calorie intake" required>
+
+    
+
+    <label for="activityLevel">Activity Level:</label>
+    <select id="activityLevel" name="activityLevel">
+      <option value="sedentary">Sedentary</option>
+      <option value="lightly-active">Lightly Active</option>
+      <option value="moderately-active">Moderately Active</option>
+      <option value="very-active">Very Active</option>
+    </select>
+
+    
+
+    <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+  </form>
+  
+  <table id="mealPlanTable">
+    <!-- Meal plan will be displayed here -->
+  </table>
+  <script src="index.js"></script>
+</body>
+</html>
